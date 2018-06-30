@@ -1,7 +1,7 @@
-original_diff = 55/58 - 30/52
+original_diff = 52/58 - 30/52
 print(original_diff)
 
-arr = c(rep(1, 85), rep(0, 25))
+arr = c(rep(1, 82), rep(0, 28))
 print(length(arr))
 
 
@@ -15,12 +15,12 @@ for(i in 1:10000){
   
   
   sum_d = sum(d)
-  p_d = sum_d/52
+  p_d = sum_d/58
   
   sum_h = sum(h)
-  p_h = sum_h/58
+  p_h = sum_h/52
   
-  diff = p_h - p_d
+  diff = p_d - p_h
   arr_diff[i] = diff
   if(diff >= original_diff){
     count = count + 1

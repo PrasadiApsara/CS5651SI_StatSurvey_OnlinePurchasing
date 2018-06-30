@@ -1,9 +1,9 @@
 #finding confidence intervals
 
-male = c(rep(1, 55), rep(0, 3))
+male = c(rep(1, 52), rep(0, 6))
 female = c(rep(1, 30), rep(0, 22))
 
-original_diff = 55/58 - 30/52
+original_diff = 52/58 - 30/52
 print(original_diff)
 
 bootstrap_array = numeric(10000)
